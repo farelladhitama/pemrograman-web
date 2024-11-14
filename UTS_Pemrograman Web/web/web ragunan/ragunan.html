@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ragunan Zoo - Wisata Taman Margasatwa Ragunan</title>
+    <link rel="stylesheet" href="ragunan.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <img src="ragunan.jpg" alt="Banner Ragunan Zoo" class="banner">
+        <h1>Welcome to Ragunan Zoo</h1>
+        <p>Tempat Wisata Margasatwa Ragunan zoo</p>
+    </header>
+
+    <!-- Navigasi -->
+    <nav>
+        <ul>
+            <li><a href="#home" onclick="showSection('home')">Home</a></li>
+            <li><a href="#content" onclick="showSection('content')">Content</a></li>
+            <li><a href="#about" onclick="showSection('about')">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Konten Utama -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="active">
+            <h2>Taman Margasatwa Ragunan</h2>
+            <p>Taman Margasatwa Ragunan yang terletak di Jakarta Selatan adalah salah satu destinasi wisata yang kaya akan sejarah dan keanekaragaman flora dan fauna. Taman Margasatwa Ragunan ternyata sudah berdiri sejak tahun 1864 di Batavia (kini Jakarta) dengan nama “Planten en Dierentuin”.
+
+                Tempat wisata ini merupakan lokasi yang sangat tepat untuk menjadi tujuan edukasi dan rekreasi, di mana pengunjung dapat melihat dan mempelajari berbagai spesies hewan sambil menikmati suasana alam.
+                
+                Selain itu, Ragunan memberikan gambaran bagaimana pentingnya menjaga keseimbangan ekosistem flora dan fauna.
+                
+                Dengan luas area sekitar 147 hektar, Taman Margasatwa Ragunan mampu menyediakan ruang yang cukup luas untuk habitat berbagai jenis satwa yang dihuni lebih dari 2.009 ekor satwa serta ditumbuhi lebih dari 20.000 pohon.
+                
+                Selain itu, Taman Margasatwa Ragunan juga dilengkapi dengan fasilitas-fasilitas seperti sarana rekreasi, taman refleksi, taman bermain satwa untuk anak, dan pusat informasi.</p>
+        </section>
+
+        <!-- Content Section -->
+        <section id="content">
+            <h2>Informasi Hewan di Ragunan Zoo</h2>
+            <table>
+                <tr>
+                    <td>Harimau</td>
+                    <td>Karnivora besar yang dikenal dengan belangnya.</td>
+                </tr>
+                <tr>
+                    <td>Gajah</td>
+                    <td>Herbivora besar dengan belalai panjang dan gading.</td>
+                </tr>
+                <tr>
+                    <td>Jerapah</td>
+                    <td>Hewan tertinggi di dunia dengan leher panjang.</td>
+                </tr>
+                <tr>
+                    <td>Singa</td>
+                    <td>Karnivora besar yang dikenal sebagai raja hutan.</td>
+                </tr>
+                <tr>
+                    <td>Panda</td>
+                    <td>Hewan omnivora asal Tiongkok yang makan bambu.</td>
+                </tr>
+                <tr>
+                    <td>Koala</td>
+                    <td>Mamalia asli Australia yang sering tidur di pohon.</td>
+                </tr>
+                <tr>
+                    <td>Kanguru</td>
+                    <td>Mamalia berkantung asal Australia yang pandai melompat.</td>
+                </tr>
+                <tr>
+                    <td>Buaya</td>
+                    <td>Reptil besar dengan gigi tajam yang hidup di air dan darat.</td>
+                </tr>
+                <tr>
+                    <td>Serigala</td>
+                    <td>Karnivora sosial yang sering berburu dalam kawanan.</td>
+                </tr>
+                <tr>
+                    <td>Elang</td>
+                    <td>Burung pemangsa dengan penglihatan tajam dan sayap lebar.</td>
+                </tr>
+                <tr>
+                    <td>Dolphin</td>
+                    <td>Mamalia laut cerdas yang dikenal ramah dan sosial.</td>
+                </tr>
+                <tr>
+                    <td>Orangutan</td>
+                    <td>Primata besar dengan lengan panjang, sering ditemukan di hutan tropis.</td>
+                </tr>
+                <tr>
+                    <td>Burung Hantu</td>
+                    <td>Burung nokturnal dengan pendengaran tajam dan kemampuan terbang senyap.</td>
+                </tr>
+                <tr>
+                    <td>Hiu</td>
+                    <td>Predator laut dengan gigi tajam yang hidup di perairan hangat.</td>
+                </tr>
+                <tr>
+                    <td>Kelinci</td>
+                    <td>Hewan kecil dengan telinga panjang, terkenal karena kecepatan berlari.</td>
+                </tr>
+                <tr>
+                    <td>Penguin</td>
+                    <td>Burung laut yang tidak bisa terbang dan terkenal dengan cara berjalan yang unik.</td>
+                </tr>
+                <tr>
+                    <td>Unta</td>
+                    <td>Hewan gurun dengan punuk yang mampu menyimpan lemak dan air.</td>
+                </tr>
+                <tr>
+                    <td>Badak</td>
+                    <td>Herbivora besar dengan tanduk tebal yang tinggal di padang rumput dan hutan.</td>
+                </tr>
+                <tr>
+                    <td>Flamingo</td>
+                    <td>Burung berwarna merah muda dengan kaki panjang dan kebiasaan hidup di air dangkal.</td>
+                </tr>
+            </table>
+            
+            
+
+            <h3>Pemesanan Tiket</h3>
+            <form id="bookingForm" onsubmit="return submitForm()">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="date">Tanggal Kunjungan:</label>
+                <input type="date" id="date" name="date" required>
+
+                <button type="submit">Pesan Sekarang</button>
+            </form>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>Tentang Kami</h2>
+            <p>Ragunan Zoo, Jakarta. Kontak: (021) 123-4567</p>
+            <p>Email: info@ragunanzoo.com</p>
+            <p><a href="https://www.ragunanzoo.com" target="_blank">Kunjungi Website Resmi Kami</a></p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Ragunan Zoo - All Rights Reserved</p>
+    </footer>
+
+    <script src="ragunan.js"></script>
+</body>
+</html>
